@@ -1,7 +1,44 @@
-h1{
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1 {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-family:monospace;
+    font-family: sans-serif;
+    color: navy;
+    
+}
+
+/* Mobile Styles */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 24px; /* Adjust the font size for smaller screens */
+        padding: 10px; /* Optional: Add padding for better spacing */
+        width: 80%; /* Optional: Adjust width for smaller screens */
+        text-align: center; /* Center text for better readability */
+        color: navy;
+    }
+}
+
+/* Tablet Styles */
+@media (min-width: 601px) and (max-width: 1024px) {
+    h1 {
+        font-size: 32px; /* Adjust the font size for tablet screens */
+        padding: 15px; /* Optional: Add padding for better spacing */
+        width: 60%; /* Optional: Adjust width for tablet screens */
+        text-align: center; /* Center text for better readability */
+        color: navy;
+    }
+}
+
+/* Desktop Styles */
+@media (min-width: 1025px) {
+    h1 {
+        font-size: 48px; /* Original font size for larger screens */
+        color: navy;
+    }
 }
